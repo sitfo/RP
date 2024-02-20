@@ -41,10 +41,10 @@ Research nowadays is focus on the score function or decoder algorithms, such as 
 
 \section{Review of the literature}
 
-In recent years, there have been a number of studies on text generation problems. This kind of problem is focused on the abilities of LLMs could focus on the coherence, interesting and relatedness of the generated text. 
+In recent years, there have been a number of studies on text generation problems. This kind of problem is focused on the abilities of LLMs could focus on the coherence, interesting and relatedness of the generated text, which is a crucial part of LLMs. This ability need to structure a sequence of events, which are factual, fictional or a mixture of both, then create a coherent and detailed convey picture of the story\cite{du-chilton-2023-storywars}. 
 
 To specific solve this kind of issue, using a better score function or better decoding algorithms has already become a common solution\cite{amini-etal-2023-generating}.
-Additionally, There are several algorithms has been proposed in last year, such as Best-$k$ Search, it is based on best-first search by adding parallel exploration, heap pruning and temporal decay part to enhance decoding performance. \cite{xu-etal-2023-best}, another decoding method Minimum Bayes Risk Decoding(MERD) selects the least expected loss for a probabilistic model follow the result of utility or reward function.\cite{suzgun-etal-2023-follow}, And the 
+Additionally, There are several algorithms has been proposed in last year, such as Best-$k$ Search, it is based on best-first search by adding parallel exploration, heap pruning and temporal decay part to enhance decoding performance. \cite{xu-etal-2023-best}, another decoding method Minimum Bayes Risk Decoding(MERD) selects the least expected loss for a probabilistic model follow the result of utility or reward function.\cite{suzgun-etal-2023-follow}, then Penalty Decoding is a method to reduce the burden of penalty selection by addressing the overly short sentences caused by excessively penalties\cite{zhu-etal-2023-penalty}.
 
 Furthermore, an improved method for storytelling Detailed Outline Control(DOC) is mentioned in this domain, it combines breadth-first expansion, event candidate generation, filtering and reranking part to enhance the performance of storytelling ability of LLMs\cite{yang-etal-2023-doc}
 

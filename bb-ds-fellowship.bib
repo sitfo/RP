@@ -75,3 +75,38 @@
     pages = "3378--3465",
     abstract = "We propose the Detailed Outline Control (DOC) framework for improving long-range plot coherence when automatically generating several-thousand-word-long stories. DOC consists of two complementary components: a detailed outliner and a detailed controller. The detailed outliner creates a more detailed, hierarchically structured outline, shifting creative burden from the main drafting procedure to the planning stage. The detailed controller ensures the more detailed outline is still respected during generation by controlling story passages to align with outline details. In human evaluations of automatically generated stories, DOC substantially outperforms a strong Re3 baseline (Yang et al., 2022) on plot coherence (22.5{\%} absolute gain), outline relevance (28.2{\%}), and interestingness (20.7{\%}). Humans also judged DOC to be much more controllable in an interactive generation setting.",
 }
+@inproceedings{du-chilton-2023-storywars,
+    title = "{S}tory{W}ars: A Dataset and Instruction Tuning Baselines for Collaborative Story Understanding and Generation",
+    author = "Du, Yulun  and
+      Chilton, Lydia",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.171",
+    doi = "10.18653/v1/2023.acl-long.171",
+    pages = "3044--3062",
+    abstract = "Collaborative stories, which are texts created through the collaborative efforts of multiple authors with different writing styles and intentions, pose unique challenges for NLP models. Understanding and generating such stories remains an underexplored area due to the lack of open-domain corpora. To address this, we introduce StoryWars, a new dataset of over 40,000 collaborative stories written by 9,400 different authors from an online platform. We design 12 task types, comprising 7 understanding and 5 generation task types, on {pasted macro {`}STORYWARS{'}}, deriving 101 diverse story-related tasks in total as a multi-task benchmark covering all fully-supervised, few-shot, and zero-shot scenarios. Furthermore, we present our instruction-tuned model, InstructStory, for the story tasks showing that instruction tuning, in addition to achieving superior results in zero-shot and few-shot scenarios, can also obtain the best performance on the fully-supervised tasks in StoryWars, establishing strong multi-task benchmark performances on StoryWars.",
+}
+@inproceedings{zhu-etal-2023-penalty,
+    title = "Penalty Decoding: Well Suppress the Self-Reinforcement Effect in Open-Ended Text Generation",
+    author = "Zhu, Wenhong  and
+      Hao, Hongkun  and
+      Wang, Rui",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.78",
+    doi = "10.18653/v1/2023.emnlp-main.78",
+    pages = "1218--1228",
+    abstract = "The decoding algorithm is critical for open-ended text generation, transforming latent representations into coherent and meaningful outputs. This paper investigates the self-reinforcement effect in text generation and the effectiveness of a repetition penalty to mitigate it. However, determining the optimal repetition penalty value is challenging. To tackle this, we propose a forgetting mechanism that disregards distant tokens, reducing the burden of penalty selection. In addition, we introduce a length penalty to address overly short sentences caused by excessive penalties. Our penalty decoding approach incorporating three strategies helps resolve issues with sampling methods deviating from factual information. Experimental results demonstrate the efficacy of our approach in generating high-quality sentences resembling human output.",
+}

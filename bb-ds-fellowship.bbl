@@ -20,6 +20,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{du-chilton-2023-storywars}
+\BIBentryALTinterwordspacing
+Y.~Du and L.~Chilton, ``{S}tory{W}ars: A dataset and instruction tuning baselines for collaborative story understanding and generation,'' in \emph{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, A.~Rogers, J.~Boyd-Graber, and N.~Okazaki, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Toronto, Canada: Association for Computational Linguistics, Jul. 2023, pp. 3044--3062. [Online]. Available: \url{https://aclanthology.org/2023.acl-long.171}
+\BIBentrySTDinterwordspacing
+
 \bibitem{amini-etal-2023-generating}
 \BIBentryALTinterwordspacing
 A.~Amini, R.~Cotterell, J.~Hewitt, L.~Malagutti, C.~Meister, and T.~Pimentel, ``Generating text from language models,'' in \emph{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 6: Tutorial Abstracts)}, Y.-N.~V. Chen, M.~Margot, and S.~Reddy, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Toronto, Canada: Association for Computational Linguistics, Jul. 2023, pp. 27--31. [Online]. Available: \url{https://aclanthology.org/2023.acl-tutorials.4}
@@ -33,6 +38,11 @@ J.~Xu, C.~Xiong, S.~Savarese, and Y.~Zhou, ``Best-k search algorithm for neural 
 \bibitem{suzgun-etal-2023-follow}
 \BIBentryALTinterwordspacing
 M.~Suzgun, L.~Melas-Kyriazi, and D.~Jurafsky, ``Follow the wisdom of the crowd: Effective text generation via minimum {B}ayes risk decoding,'' in \emph{Findings of the Association for Computational Linguistics: ACL 2023}, A.~Rogers, J.~Boyd-Graber, and N.~Okazaki, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Toronto, Canada: Association for Computational Linguistics, Jul. 2023, pp. 4265--4293. [Online]. Available: \url{https://aclanthology.org/2023.findings-acl.262}
+\BIBentrySTDinterwordspacing
+
+\bibitem{zhu-etal-2023-penalty}
+\BIBentryALTinterwordspacing
+W.~Zhu, H.~Hao, and R.~Wang, ``Penalty decoding: Well suppress the self-reinforcement effect in open-ended text generation,'' in \emph{Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing}, H.~Bouamor, J.~Pino, and K.~Bali, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Singapore: Association for Computational Linguistics, Dec. 2023, pp. 1218--1228. [Online]. Available: \url{https://aclanthology.org/2023.emnlp-main.78}
 \BIBentrySTDinterwordspacing
 
 \bibitem{yang-etal-2023-doc}
