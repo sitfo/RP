@@ -1,0 +1,90 @@
+\documentclass[10pt]{article}
+\usepackage{sharina}
+
+
+\author{}
+
+\title{2023--2024 Birmingham Natural Language Processing Ph.D. Fellowship Application}
+
+\begin{document}
+\renewcommand{\thesection}{\Roman{section}}.
+	
+	\begin{center}
+		{\Large \textbf{Resarch Proposal of Long-form Text Generation of Large Language Models}}\\
+		\vspace{1em}
+		{\large Jinlong Liu}\\
+		\vspace{1em}
+	\end{center}
+
+	\begin{center}
+		\rule{150mm}{0.2mm}
+	\end{center}	
+	
+	\begin{abstract}
+	
+		This research proposal aims to solve the common issue of long-form text generation in large language models. The research will try to build a deep learning model or using algorithms to improve the abilities of the model to generate coherent and meaningful text that resembles human-generated text.
+	\end{abstract}
+
+	\begin{center}
+		\rule{150mm}{0.2mm}
+	\end{center}	
+
+	\vspace{5mm}
+
+
+\begin{multicols}{2}
+\section{Research Topic}
+Natural Language Processing (NLP) has made significant progress in recent years, with the development of large language models such as GPT-3, BERT, and T5. These models have shown impressive capabilities in tasks such as language modeling, text generation, and machine translation, among others. However, one common issue with these models is their ability to generate long-form text, such as writing stories, essays, or articles. It is a chanllenging task for models to garentee the coherence and meaningfulness of the generated text. This research proposal aims to address this issue by developing a deep learning model or using algorithms to improve the abilities of the model to generate coherent and meaningful text that resembles human-generated text.
+
+Research nowadays is focus on the score function or decoder algorithms, such as top-$k$, Beam search, nucleus sampling, and so on.But I want to propose a potainal solution to this issue by using Graph Neural Networks (GNNs) to model the relationships between words in a text and generate new text. The motivation behind using GNNs is to capture the complex dependencies and interactions among words in a text, which can help the model generate more coherent and contextually relevant text. The proposed model will be based on the newest model such as T5, and will be evaluated on text generation tasks in specific domains, such as writing stories.
+
+
+\section{Review of the literature}
+
+In recent years, there have been a number of studies on text generation problems. This kind of problem is focused on the abilities of LLMs could focus on the coherence, interesting and relatedness of the generated text. 
+
+To specific solve this kind of issue, using a better score function or better decoding algorithms has already become a common solution\cite{amini-etal-2023-generating}.
+Additionally, There are several algorithms has been proposed in last year, such as Best-$k$ Search, it is based on best-first search by adding parallel exploration, heap pruning and temporal decay part to enhance decoding performance. \cite{xu-etal-2023-best}, another decoding method Minimum Bayes Risk Decoding(MERD) selects the least expected loss for a probabilistic model follow the result of utility or reward function.\cite{suzgun-etal-2023-follow}, And the 
+
+Furthermore, an improved method for storytelling Detailed Outline Control(DOC) is mentioned in this domain, it combines breadth-first expansion, event candidate generation, filtering and reranking part to enhance the performance of storytelling ability of LLMs\cite{yang-etal-2023-doc}
+
+
+ 
+
+\section{Research objectives} 
+
+	
+\section{Research strategy}
+
+
+\section{Schedule and budget}
+
+The Timeline for this research topic shown as Table \ref{table:t1}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{@{}|c|l|@{}}
+		\toprule
+		Time         & \multicolumn{1}{c|}{Activities}                                                                            \\ \midrule
+		First Term & \begin{tabular}[c]{@{}l@{}}Literature Review\\ Understand the theory part in SeqGAN\\ Progress report\end{tabular}      \\ \midrule
+		Second Term  & \begin{tabular}[c]{@{}l@{}}Modify SeqGAN \\ Combine it with other Framework\\ Progress report\end{tabular} \\ \midrule
+		Third Term & \begin{tabular}[c]{@{}l@{}}Training model then evaluate it\\ Completion draft of paper\\ Progress report\end{tabular}   \\ \midrule
+		Fourth Term  & \begin{tabular}[c]{@{}l@{}}Submission papers in optimized edition\\ Progress report\end{tabular}           \\ \midrule
+		Fifth Term   & \begin{tabular}[c]{@{}l@{}}Keeping optimize developed framework\\ Progress report\end{tabular}             \\ \midrule
+		Sixth Term & \begin{tabular}[c]{@{}l@{}}Training model then evaluate it\\ Compare ot with fromer data\\ Progress report\end{tabular} \\ \midrule
+		Seventh Term & \begin{tabular}[c]{@{}l@{}}Completion draft of paper\\ Submission papers in optimized edition\end{tabular} \\ \midrule
+		Eighth Term  & \begin{tabular}[c]{@{}l@{}}Completion of thesis \\ Submission of the thesis\end{tabular}                   \\ \bottomrule
+		\end{tabular}
+	\caption{Schedule for Ph.D.}
+	\label{table:t1}
+\end{table}
+For budget part, the main cost will be model training, the cost mainly in building powerful server or renting a powerful cloud server.\\
+
+\end{multicols}
+
+\newpage
+
+\bibliography{IEEEabrv,bb-ds-fellowship}
+\bibliographystyle{IEEEtran}
+	
+\end{document}

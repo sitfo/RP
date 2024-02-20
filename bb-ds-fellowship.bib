@@ -1,0 +1,77 @@
+@inproceedings{amini-etal-2023-generating,
+    title = "Generating Text from Language Models",
+    author = "Amini, Afra  and
+      Cotterell, Ryan  and
+      Hewitt, John  and
+      Malagutti, Luca  and
+      Meister, Clara  and
+      Pimentel, Tiago",
+    editor = "Chen, Yun-Nung (Vivian)  and
+      Margot, Margot  and
+      Reddy, Siva",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 6: Tutorial Abstracts)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-tutorials.4",
+    doi = "10.18653/v1/2023.acl-tutorials.4",
+    pages = "27--31",
+    abstract = "An increasingly large percentage of natural language processing (NLP) tasks center around the generation of text from probabilistic language models. Despite this trend, techniques for improving or specifying preferences in these generated texts rely mostly on intuition-based heuristics. Further, there lacks a unified presentation of their motivations, practical implementation, successes and pitfalls. Practitioners must, therefore, choose somewhat blindly between generation algorithms{---}like top-p sampling or beam search{---}which can lead to wildly different results. At the same time, language generation research continues to criticize and improve the standard toolboxes, further adding entropy to the state of the field. In this tutorial, we will provide a centralized and cohesive discussion of critical considerations when choosing how to generate from a language model. We will cover a wide range of empirically-observed problems (like degradation, hallucination, repetition) and their corresponding proposed algorithmic solutions from recent research (like top-p sampling and its successors). We will then discuss a subset of these algorithms under a unified light; most stochastic generation strategies can be framed as locally adapting the probabilities of a model to avoid failure cases. Finally, we will then cover methods in controlled generation, that go beyond just ensuring coherence to ensure text exhibits specific desired properties. We aim for NLP practitioners and researchers to leave our tutorial with a unified framework which they can use to evaluate and contribute to the latest research in language generation.",
+}
+@inproceedings{xu-etal-2023-best,
+    title = "Best-k Search Algorithm for Neural Text Generation",
+    author = "Xu, Jiacheng  and
+      Xiong, Caiming  and
+      Savarese, Silvio  and
+      Zhou, Yingbo",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.692",
+    doi = "10.18653/v1/2023.acl-long.692",
+    pages = "12385--12401",
+    abstract = "Modern natural language generation paradigms require a decoding strategy to obtain quality sequences out of the model. Beam search yields high-quality but low diversity outputs; stochastic approaches suffer from high variance and sometimes low quality. In this work, we propose a deterministic search algorithm balancing both quality and diversity. We first investigate the vanilla best-first search (BFS) algorithm and then propose the best-k search algorithm. Inspired by BFS, we greedily expand the top k nodes, instead of the first node, to boost efficiency and diversity. Upweighting recently discovered nodes accompanied by heap pruning ensures the completeness of the search procedure. Experiments on four NLG tasks show that best-k search yields more diverse and natural outputs compared to strong baselines, while our approach maintains high text quality. The proposed algorithm is parameter-free, lightweight, efficient, and easy-to-use.",
+}
+@inproceedings{suzgun-etal-2023-follow,
+    title = "Follow the Wisdom of the Crowd: Effective Text Generation via Minimum {B}ayes Risk Decoding",
+    author = "Suzgun, Mirac  and
+      Melas-Kyriazi, Luke  and
+      Jurafsky, Dan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.262",
+    doi = "10.18653/v1/2023.findings-acl.262",
+    pages = "4265--4293",
+    abstract = "In open-ended natural-language generation, existing text decoding methods typically struggle to produce text which is both diverse and high-quality. Greedy and beam search are known to suffer from text degeneration and linguistic diversity issues, while temperature, top-k, and nucleus sampling yield diverse but often lower-quality outputs. In this work, we build upon Minimum Bayes Risk Decoding (MBRD), a family of decoding methods based on Bayesian risk minimization, to address this diversity-quality trade-off. Inspired by the principle of the wisdom of the crowd, MBRD seeks to select a candidate from a pool of candidates that has the least expected risk under a generative model according to a given utility function. The crowd of candidates serves as an approximation for the distribution over human-generated references. We show that MBRD generalizes numerous decoding methods, including majority voting, and can be used as a drop-in replacement for existing sampling methods. Across a wide range of tasks{---}such as summarization, data-to-text, translation, and textual style transfer{---}MBRD yields 3-7 ROUGE and BLEU point improvements, including state-of-the-art results on WebNLG and WMT{'}16.",
+}
+@inproceedings{yang-etal-2023-doc,
+    title = "{DOC}: Improving Long Story Coherence With Detailed Outline Control",
+    author = "Yang, Kevin  and
+      Klein, Dan  and
+      Peng, Nanyun  and
+      Tian, Yuandong",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.190",
+    doi = "10.18653/v1/2023.acl-long.190",
+    pages = "3378--3465",
+    abstract = "We propose the Detailed Outline Control (DOC) framework for improving long-range plot coherence when automatically generating several-thousand-word-long stories. DOC consists of two complementary components: a detailed outliner and a detailed controller. The detailed outliner creates a more detailed, hierarchically structured outline, shifting creative burden from the main drafting procedure to the planning stage. The detailed controller ensures the more detailed outline is still respected during generation by controlling story passages to align with outline details. In human evaluations of automatically generated stories, DOC substantially outperforms a strong Re3 baseline (Yang et al., 2022) on plot coherence (22.5{\%} absolute gain), outline relevance (28.2{\%}), and interestingness (20.7{\%}). Humans also judged DOC to be much more controllable in an interactive generation setting.",
+}
